@@ -9,11 +9,11 @@ namespace LetterFormatedTests
     public class TextFormattingTests
     {
         [TestMethod]
-        public void TestTextFormatingWithStub()
+        public void TestTextIsCentered()
         {
             //arrange
 
-            var formater = new LetterFormater.SimlpeTextFormater();
+            var formater = new SimlpeTextFormater();
             string input = " My line  ";
             int lineLenght = 10;
 
