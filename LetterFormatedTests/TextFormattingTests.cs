@@ -1,6 +1,7 @@
 ﻿using LetterFormater;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Runtime.Serialization;
 
 namespace LetterFormatedTests
 {
@@ -13,13 +14,13 @@ namespace LetterFormatedTests
             //arrange
 
             var formater = new LetterFormater.SimlpeTextFormater();
-            string input = "My line";
+            string input = " My line  ";
             int lineLenght = 10;
 
             //act
 
             string result = formater.FormatLine(input, lineLenght);
-            
+
             //assert
 
             Assert.AreEqual(input, result);
